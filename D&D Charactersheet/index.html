@@ -10,7 +10,15 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<div data-role="page" id="Characters" data-theme="b">
+		<div data-role="page" id="start" data-theme="b" align="center">
+			<img src="images/logo.png" alt="logo" />
+			<article>
+				<div data-role="controlgroup" data-type="horizontal">
+				<a href="#characters" class="ui-btn" > Start</a>
+				</div>
+			</article>
+		</div>
+		<div data-role="page" id="characters" data-theme="b">
 			<header>
 				<h1>Characters</h1>
 			</header>
@@ -51,9 +59,19 @@
 			</footer>
 		</div>
 		<div data-role="page" id="charactersheet-player" data-theme="b">
-			<header>
+			<header data-role="header">
+				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Player</h1>
 			</header>
+			<article>
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							
+						</li>
+					</ul>
+				</nav>
+			</article>
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
 					<ul>
@@ -75,7 +93,8 @@
 			</footer>
 		</div>
 		<div data-role="page" id="charactersheet-stats" data-theme="b">
-			<header>
+			<header data-role="header">
+				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Stats</h1>
 			</header>
 			<footer data-role="footer" data-position="fixed">
@@ -98,7 +117,8 @@
 			</footer>
 		</div>
 		<div data-role="page" id="charactersheet-combat" data-theme="b">
-			<header>
+			<header data-role="header">
+				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Combat</h1>
 			</header>
 			<footer data-role="footer" data-position="fixed">
@@ -122,7 +142,8 @@
 			</footer>
 		</div>
 		<div data-role="page" id="charactersheet-pack" data-theme="b">
-			<header>
+			<header data-role="header">
+				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Pack</h1>
 			</header>
 			<footer data-role="footer" data-position="fixed">
