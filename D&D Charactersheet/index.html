@@ -14,7 +14,7 @@
 			<img src="images/logo.png" alt="logo" />
 			<article>
 				<div data-role="controlgroup" data-type="horizontal">
-				<a href="#characters" class="ui-btn" > Start</a>
+					<a href="#characters" class="ui-btn" > Start</a>
 				</div>
 			</article>
 		</div>
@@ -25,7 +25,7 @@
 			<article data-role="content">
 				<ul data-role="listview" data-filter="true" >
 					<li>
-						<a href="#charactersheet-player"> <h1>Thörig Shieldbearer</h1>
+						<a href="#charactersheet-details"> <h1>Thörig Shieldbearer</h1>
 						<p>
 							Race: Human
 						</p>
@@ -37,7 +37,7 @@
 						</p></a>
 					</li>
 					<li>
-						<a href="#charactersheet-player"> <h1>Jaena Proudmoore</h1>
+						<a href="#charactersheet-details"> <h1>Jaena Proudmoore</h1>
 						<p>
 							Race: Elf
 						</p>
@@ -50,7 +50,7 @@
 					</li>
 					<li>
 						<nav data-role="navbar">
-							<a href="#charactersheet-player" data-icon="plus"></a>
+							<a href="#charactersheet-details" data-icon="plus"></a>
 						</nav>
 					</li>
 			</article>
@@ -58,16 +58,16 @@
 
 			</footer>
 		</div>
-		<div data-role="page" id="charactersheet-player" data-theme="b">
+		<div data-role="page" id="charactersheet-details" data-theme="b" align="center" style="font-size:13px">
 			<header data-role="header">
 				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
-				<h1>Player</h1>
+				<h1>Details</h1>
 			</header>
 			<article>
 				<nav data-role="navbar">
 					<ul>
 						<li>
-							
+
 						</li>
 					</ul>
 				</nav>
@@ -76,47 +76,115 @@
 				<nav data-role="navbar">
 					<ul>
 						<li>
-							<a href="#charactersheet-player" >Player</a>
+							Details
 						</li>
 						<li>
-							<a href="#charactersheet-stats">Stats</a>
+							<a href="#charactersheet-stats" data-transition="slide">Stats</a>
 						</li>
 						<li>
-							<a href="#charactersheet-combat">Combat</a>
+							<a href="#charactersheet-combat" data-transition="slide">Combat</a>
 						</li>
 						<li>
-							<a href="#charactersheet-pack">Pack</a>
+							<a href="#charactersheet-pack" data-transition="slide">Pack</a>
 						</li>
 
 					</ul>
 				</nav>
 			</footer>
 		</div>
-		<div data-role="page" id="charactersheet-stats" data-theme="b">
+		<div data-role="page" id="charactersheet-stats" data-theme="b" align="center" style="font-size:13px">
 			<header data-role="header">
 				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Stats</h1>
 			</header>
+			<article data-role="content">
+				<div class="ui-grid-a" id="restaurant_info">
+					<div class="ui-block-a">
+						<ul data-role="listview"  data-inset="true">
+							<li>
+								<nav data-role="navbar">
+									<ul>
+										<li>
+											Strength:
+										</li>
+										<li>
+											<form action="demo_form.asp">
+												<input type="number" name="strength" value="10">
+												<br>
+											</form>
+										</li>
+										<li></li>
+										<li>
+											Modifiër
+										</li>
+										<li>
+											<form action="demo_form.asp">
+												<input type="number" name="strength_mod" value="0">
+												<br>
+											</form>
+										</li>
+									</ul>
+								</nav>
+							</li>
+							<li>
+								Dexterity:
+								<form action="demo_form.asp">
+									<input type="number" name="dexterity" value="10">
+									<br>
+								</form>
+							</li>
+							<li>
+								Constitution:
+								<form action="demo_form.asp">
+									<input type="number" name="constitution" value="10">
+									<br>
+								</form>
+							</li>
+							<li>
+								Intelligence:
+								<form action="demo_form.asp">
+									<input type="number" name="intelligence" value="10">
+									<br>
+								</form>
+							</li>
+							<li>
+								Wisdom:
+								<form action="demo_form.asp">
+									<input type="number" name="wisdom" value="10">
+									<br>
+								</form>
+							</li>
+							<li>
+								Charisma:
+								<form action="demo_form.asp">
+									<input type="number" name="charisma" value="10">
+									<br>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
 					<ul>
 						<li>
-							<a href="#charactersheet-player" >Player</a>
+							<a href="#charactersheet-details" data-transition="slide" data-direction="reverse">Details</a>
 						</li>
 						<li>
-							<a href="#charactersheet-stats">Stats</a>
+							Stats
 						</li>
 						<li>
-							<a href="#charactersheet-combat">Combat</a>
+							<a href="#charactersheet-combat" data-transition="slide">Combat</a>
 						</li>
 						<li>
-							<a href="#charactersheet-pack">Pack</a>
+							<a href="#charactersheet-pack" data-transition="slide">Pack</a>
 						</li>
 					</ul>
 				</nav>
 			</footer>
 		</div>
-		<div data-role="page" id="charactersheet-combat" data-theme="b">
+		<div data-role="page" id="charactersheet-combat" data-theme="b" align="center" style="font-size:13px">
 			<header data-role="header">
 				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Combat</h1>
@@ -125,23 +193,23 @@
 				<nav data-role="navbar">
 					<ul>
 						<li>
-							<a href="#charactersheet-player" >Player</a>
+							<a href="#charactersheet-details" data-transition="slide" data-direction="reverse">Details</a>
 						</li>
 						<li>
-							<a href="#charactersheet-stats">Stats</a>
+							<a href="#charactersheet-stats" data-transition="slide" data-direction="reverse">Stats</a>
 						</li>
 						<li>
-							<a href="#charactersheet-combat">Combat</a>
+							Combat
 						</li>
 						<li>
-							<a href="#charactersheet-pack">Pack</a>
+							<a href="#charactersheet-pack" data-transition="slide">Pack</a>
 						</li>
 
 					</ul>
 				</nav>
 			</footer>
 		</div>
-		<div data-role="page" id="charactersheet-pack" data-theme="b">
+		<div data-role="page" id="charactersheet-pack" data-theme="b" align="center" style="font-size:13px">
 			<header data-role="header">
 				<a href="#characters" data-icon="grid" data-iconpos="notext"></a>
 				<h1>Pack</h1>
@@ -150,16 +218,16 @@
 				<nav data-role="navbar">
 					<ul>
 						<li>
-							<a href="#charactersheet-player" >Player</a>
+							<a href="#charactersheet-details" data-transition="slide" data-direction="reverse">Details</a>
 						</li>
 						<li>
-							<a href="#charactersheet-stats">Stats</a>
+							<a href="#charactersheet-stats" data-transition="slide" data-direction="reverse">Stats</a>
 						</li>
 						<li>
-							<a href="#charactersheet-combat">Combat</a>
+							<a href="#charactersheet-combat" data-transition="slide" data-direction="reverse">Combat</a>
 						</li>
 						<li>
-							<a href="#charactersheet-pack">Pack</a>
+							Pack
 						</li>
 
 					</ul>
