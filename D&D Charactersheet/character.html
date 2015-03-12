@@ -10,17 +10,23 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<div data-role="page" data-theme="b" id="home">
+		<div data-role="page" data-theme="b" id="addChar">
 			<div data-role="header">
 				<h1>D&D Charactersheet</h1>
 			</div>
 			<div data-role="content">
-				<a href="character.html" style="text-decoration: none"><button>Add Character</button></a>
-				<ul id="items" data-role="listview" data-filter="true" data-inset="true"></ul>
-				<input type="button" value="CLEAR" onclick="delList();">
+				<h5>Name:</h5>
+				<input type="text" name="name" placeholder="Add a character name...">
+				<h5>Class:</h5>
+				<input type="text" name="clas" placeholder="Add a character class...">
+				<h5>Sex:</h5>
+				<input type="text" name="sex" placeholder="Add a character sex...">
+				<h5>Race:</h5>
+				<input type="text" name="race" placeholder="Add a character race...">
+
+				<a href="index.html" style="text-decoration: none" onclick="add();"><button>Add</button></a>
+				<script src="app.js"></script>
 			</div>
 		</div>
-		<script src="app.js"></script>
-	</body>S
+	</body>
 </html>
-
